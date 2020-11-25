@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<title>Ciutadella Roses :: AR</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Custom CSS styles-->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class="style1">
+	<div>
+		<img src="assets/images/icons/Icon_tancar.png" class="closeArButton" id="closeArButton" onclick="hideAR()">
+	</div>
+	<script>
+
+		function addScene() {
+		
+			var scene = document.createElement("iframe");
+			scene.setAttribute("src", "ar.html");
+			scene.setAttribute("class", "arWindow");
+			scene.setAttribute("id", "ARFrame");
+			document.querySelector("body").appendChild(scene);
+
+		}
+		addScene();
+		function addButton(){
+
+		}
+		
+		var arFrame = document.getElementById("ARFrame");
+		arFrame.style.visibility = "hidden";
+		var closeButton = document.getElementById("closeArButton");
+		closeButton.style.visibility = "hidden";
+
+		function showAR(){
+			arFrame.style.visibility = "visible";
+			closeButton.style.visibility = "visible";
+		}
+
+		function hideAR(){
+			arFrame.style.visibility = "hidden";
+			closeButton.style.visibility = "hidden";
+		}
+		
+		function hideSlider(s){
+			var bg = document.getElementById("blackBG");
+			var s = document.getElementById(s);
+
+			bg.style.visibility = "hidden";
+			s.style.visibility = "hidden";
+		}
+
+		function showSlider(s){
+			var bg = document.getElementById("blackBG");
+			var s = document.getElementById(s);
+
+			bg.style.visibility = "visible";
+			s.style.visibility = "visible";
+		}
+		
+	</script>
+	<div class="Black-bg" id="blackBG"> </div>
+
+	<!-- Slider 1 -->
+	<div class="SliderContainer" id="slider1">
+		<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider1')">
+		<!-- Swiper -->
+		<div class="swiper-container">
+		   <div class="swiper-wrapper">
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/P1_plus/PI1-plus-1.jpeg" width="100%" height="auto"></div>
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/P1_plus/PI1-plus-2.jpeg" width="100%" height="auto"></div>
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/P1_plus/PI1-plus-3.jpeg" width="100%" height="auto"></div>
+		   </div>
+		   <!-- Add Pagination -->
+		   <div class="swiper-pagination"></div>
+		 </div>
+   </div>
+
+   
+	<!-- Slider 2 -->
+	<div class="SliderContainer" id="slider2">
+		<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider2')">
+		<!-- Swiper -->
+		<div class="swiper-container">
+		   <div class="swiper-wrapper">
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/P2_plus/P2-plus-1.jpeg" width="100%" height="auto"></div>
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/P2_plus/P2-plus-2.jpeg" width="100%" height="auto"></div>
+		   </div>
+		   <!-- Add Pagination -->
+		   <div class="swiper-pagination"></div>
+		 </div>
+   </div>
+
+   
+	<!-- Slider 3 -->
+	<div class="SliderContainer" id="slider3">
+		<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider3')">
+		<!-- Swiper -->
+		<div class="swiper-container">
+		   <div class="swiper-wrapper">
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/PI3_plus/P3-plus-1.jpeg" width="100%" height="auto"></div>
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/PI3_plus/P3-plus-2.jpeg" width="100%" height="auto"></div>
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/PI3_plus/P3-plus-3.jpeg" width="100%" height="auto"></div>
+		   </div>
+		   <!-- Add Pagination -->
+		   <div class="swiper-pagination"></div>
+		 </div>
+   </div>
+
+   
+	<!-- Slider 4 -->
+	<div class="SliderContainer" id="slider4">
+		<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider4')">
+		<!-- Swiper -->
+		<div class="swiper-container">
+		   <div class="swiper-wrapper">
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/PI4_plus/PI4-plus-1.jpeg" width="100%" height="auto"></div>
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/PI4_plus/PI4-plus-2.jpeg" width="100%" height="auto"></div>
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/PI4_plus/PI4-plus-3.jpeg" width="100%" height="auto"></div>
+		   </div>
+		   <!-- Add Pagination -->
+		   <div class="swiper-pagination"></div>
+		 </div>
+   </div>
+
+      
+	<!-- Slider 5 -->
+	<div class="SliderContainer" id="slider5">
+		<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider5')">
+		<!-- Swiper -->
+		<div class="swiper-container">
+		   <div class="swiper-wrapper">
+			 <div class="swiper-slide"><img src="assets/images/thumbnails/PI5_plus/PI5-plus-1.jpeg" width="100%" height="auto"></div>
+		   </div>
+		   <!-- Add Pagination -->
+		   <div class="swiper-pagination"></div>
+		 </div>
+   </div>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-transparent style11" style="height: 50px;">
+		<div class="container style12">
+			<img src="assets/images/icons/I-Informacio.png" class="img-fluid style13" style="position: absolute; left: 50%; transform: translate(-50%);">
+			<img src="assets/images/icons/instagram.png" class="img-fluid style13" style="position: absolute; right: 50px;">
+			<img src="assets/images/icons/facebook.png" class="img-fluid style10" style="position: absolute; right: 20px;">
+		</div>
+	</nav>
+	<section id="features" class="style3">
+		<div class="container">
+			<div class="row style6">
+				<div class="col-12 text-center">
+					<img class="img-fluid style2" src="assets/images/icons/Logo_LaCiutadella.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
+					<div class="d-flex">
+						<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%); opacity: 60%;" onclick="showAR()">
+						<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;">
+						<img src="assets/images/thumbnails/P0_Benvinguda.png" class="img-fluid"></div>
+
+
+					<p class="text-light style4">Benvinguda</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
+					<div class="d-flex">
+						<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%); opacity: 60%;" onclick="showAR()">
+						<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider1')">
+						<img src="assets/images/thumbnails/PI1.png" class="img-fluid"></div>
+
+
+					<p class="text-light style4">Ciutat Romana: Rodae, Segle I d.J.C. - V d.J.C.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
+					<div class="d-flex">
+						<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%); opacity: 60%;" onclick="showAR()">
+						<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider2')">
+						<img src="assets/images/thumbnails/PI2.png" class="img-fluid"></div>
+
+
+					<p class="text-light style4">Ciutat Grega: Rhode, segles V-II a.C.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
+					<div class="d-flex">
+						<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%); opacity: 60%;" onclick="showAR()">
+						<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider3')">
+						<img src="assets/images/thumbnails/PI3.png" class="img-fluid"></div>
+
+
+					<p class="text-light style4">Monestir de Santa Maria de Roses, segles X-XV.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
+					<div class="d-flex">
+						<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%); opacity: 60%;" onclick="showAR()">
+						<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider4')">
+						<img src="assets/images/thumbnails/PI4_new.png" class="img-fluid"></div>
+
+
+					<p class="text-light style4">Vila medieval i moderna: Roses, segles XV-XVII.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
+					<div class="d-flex">
+						<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%); opacity: 60%;" onclick="showAR()">
+						<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider5')">
+						<img src="assets/images/thumbnails/PI5_new.png" class="img-fluid"></div>
+
+
+					<p class="text-light style4">Fortificació Reinaxentista, segles XVI-XIX.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="style15" style="">
+		<img src="assets/images/icons/Logo_Ajuntament_de_Roses.png" class="img-fluid style14" style="opacity: 60%;">
+	</section>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+	  var swiper = new Swiper('.swiper-container', {
+		pagination: {
+		  el: '.swiper-pagination',
+		  dynamicBullets: true,
+		},
+	  });
+	</script>
+
+</body>
+
+</html>

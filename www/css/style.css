@@ -1,0 +1,170 @@
+/* CSS Document */
+body {
+	padding-top: 55px;
+}
+#page-header {
+	padding-top: 120px;
+    background: linear-gradient(135deg, #35b8b0 0%,#1c799d 100%);
+}
+#header-text {
+	color: #fff;
+}
+#header-img > img {
+    -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,.2);
+            box-shadow: 0 2px 10px 1px rgba(0,0,0,.2);
+}
+section {
+	padding: 40px 0;
+	position: relative;
+}
+h3.section-title {
+	margin-bottom: 30px;
+	font-weight: 400;
+}
+#features i {
+	    background: #f9f9f9;
+        width: 124px;
+    border-radius: 50%;
+    height: 124px;
+    line-height: 124px;
+}
+#features h5 {
+	color: #1b99b9;
+	font-weight: 400;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#screenshots {
+	padding-top: 50px;
+}
+#screenshots h2 {
+	font-weight: 400;
+}
+#screenshots .row {
+	margin-bottom: 80px;
+}
+#screenshots img {
+    -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,.2);
+            box-shadow: 0 2px 10px 1px rgba(0,0,0,.2);
+}
+#page-footer {
+    padding: 15px 0 10px;
+    font-size: 12px;
+}
+.style1 {
+	background-color: #00AB93;
+	padding-top: 0px;
+}
+.style2 {
+	max-width: 50%;
+	float: left;
+}
+.style3 {
+	padding-top: 5px;
+	padding-bottom: 5px;}
+.style4 {
+	font-size: .75rem;
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+.style5 {}
+.style6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.style5.logoFinal {
+	background-color: #716D47;
+	margin-bottom: -10px;
+	padding-bottom: 0px;}
+.style7 {
+	max-width: 200px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.style8 {
+	display: block;
+	display: -ms-flexbox;
+	display: -webkit-box;	
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	max-width: 25px;
+}
+.style9 {
+	max-width: 80px;
+	background-size: auto;
+	position: absolute;
+}
+.style10 {
+	max-width: 25px;
+}
+.style11 {
+}
+.style12 {
+}
+.style13 {
+	max-width: 25px;
+}
+.style14 {
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.style15 {
+	background-color: #716D47;
+}
+.style9.ARButton {}
+
+.arWindow{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.closeArButton{
+	position: fixed;
+	z-index: 3;
+	right: 15px;
+	top: 15px;
+	height: 30px;
+	width: 30px;
+	visibility: hidden;
+}
+
+.closeSliderButton{
+	position: absolute;
+	display: block;
+	z-index: 4;
+	width: 20px;
+	height: 20px;
+	right: -10px;
+	top: -10px;
+}
+
+.Black-bg{
+	position: fixed;
+	z-index: 2;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	opacity: 60%;
+	visibility: hidden;
+}
+
+.SliderContainer{
+	width: 90%;
+	height: auto;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	opacity: 200% !important;
+	max-height: 70%;
+	max-width: 1000px;
+	visibility: hidden;
+}

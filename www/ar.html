@@ -1,0 +1,130 @@
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+
+<style>
+  .arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arjs-loader div {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+  }
+</style>
+
+<body style="margin : 0px; overflow: hidden;">
+  <!-- minimal loader shown until image descriptors are loaded -->
+  <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div>
+  <a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+  >
+    <!-- we use cors proxy to avoid cross-origin problems -->
+
+    <!--P1 marker-->
+    <a-nft
+      type="nft"
+      url="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P1_Roma/nft/P1_marker"
+      smooth="true"
+      smoothcount="10"
+      smoothtolerance=".01"
+      smooththreshold="5"
+    >
+      <a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P1_Roma/scene.gltf"
+        scale="0.15 0.15 0.15"
+        position="50 150 0"
+        rotation="0 90 0"
+      >
+      </a-entity>
+    </a-nft>
+
+    <!--P2 marker-->
+    <a-nft
+      type="nft"
+      url="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P2_Grec/nft/P2_Grec_marker"
+      smooth="true"
+      smoothcount="10"
+      smoothtolerance=".01"
+      smooththreshold="5"
+    >
+      <a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P2_Grec/scene.gltf"
+        scale= "150 150 150"
+        position="50 0 -50"
+        rotation="0 180 0"
+      >
+      </a-entity>
+    </a-nft>
+    
+    <!--P3 marker-->
+    <a-nft
+      type="nft"
+      url="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P3_Esglesia/nft/P3_Esglesia_marker"
+      smooth="true"
+      smoothcount="10"
+      smoothtolerance=".01"
+      smooththreshold="5"
+    >
+      <a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P3_Esglesia/P3_Esglesia_model.gltf"
+        scale="0.038 0.038 0.038"
+        position="50 0 -50"
+        rotation="0 0 0"
+      >
+      </a-entity>
+    </a-nft>
+    
+    <!--P4 marker-->
+    <a-nft
+      type="nft"
+      url="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P4_Medieval/nft/P4_Medieval"
+      smooth="true"
+      smoothcount="10"
+      smoothtolerance=".01"
+      smooththreshold="5"
+    >
+      <a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P4_Medieval/scene.gltf"
+        scale="0.08 0.08 0.08"
+        position="150 0 -200"
+        rotation="0 0 0"
+      >
+      </a-entity>
+    </a-nft>
+
+    <!--P5 marker-->
+    <a-nft
+      type="nft"
+      url="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P5_Caserna/nft/P5_marker"
+      smooth="true"
+      smoothcount="10"
+      smoothtolerance=".01"
+      smooththreshold="5"
+    >
+      <a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://www.digitbcn.com/ARtest/ar/P5_Caserna/P5_Model-AR.gltf"
+        scale="5 5 5"
+        position="50 150 0"
+        rotation="0 -30 0"
+      >
+      </a-entity>
+    </a-nft>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
