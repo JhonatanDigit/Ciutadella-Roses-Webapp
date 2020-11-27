@@ -34,23 +34,37 @@ body{
 		background-color: black;
 		width: 80%;
 		height: 100%;
-		opacity: 60%;
+		opacity: 100% !important;
 		margin-top: -20px;
 	}	
 	.SliderContainer{
-		position: absolute fixed !important;
+		position: absolute !important;
 		margin: 0 auto !important;
 		width: 100% !important;
 		height: 100% !important;
+		top: 0px;
+		bottom: 0px;
+	}
+	.closeSliderButton{
+		position: absolute;
+		visibility: hidden;
+		z-index: 5;
+		width: 30px;
+		height: 30px;
+		right: 20px;
+		top: 20px;
+		opacity: 100% !important;
+		display: inherit !important;
 	}
 	.imageSlider{
 		width: 50% !important;
 		height: auto !important;
 	}
 
-	iframe{
+	.iframeContainer{
 		width: 100%;
 		height: 100%;
+		visibility: hidden;
 	}
 
 	.mainPhoneWrapper{
@@ -210,7 +224,6 @@ h3.section-title {
 .style15 {
 	background-color: #716D47;
 }
-.style9.ARButton {}
 
 .arWindow{
 	position: fixed;
@@ -234,11 +247,11 @@ h3.section-title {
 .closeSliderButton{
 	position: absolute;
 	display: block;
-	z-index: 4;
-	width: 20px;
-	height: 20px;
-	right: -10px;
-	top: -10px;
+	z-index: 5;
+	width: 30px;
+	height: 30px;
+	right: 20px;
+	top: 20px;
 }
 
 .Black-bg{
@@ -247,7 +260,11 @@ h3.section-title {
 	background-color: black;
 	width: 100%;
 	height: 100%;
-	opacity: 60%;
+	visibility: hidden;
+}
+.iframeContainer{
+	width: 100%;
+	height: 100%;
 	visibility: hidden;
 }
 
@@ -263,4 +280,10 @@ h3.section-title {
 	max-height: 70%;
 	max-width: 1000px;
 	visibility: hidden;
+}
+
+#sliderIframe2, #sliderIframe3, #sliderIframe4, #sliderIframe5{
+	position: absolute;
+	left: 0px;
+	top: 0px;
 }

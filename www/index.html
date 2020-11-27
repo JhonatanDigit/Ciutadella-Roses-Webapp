@@ -25,7 +25,7 @@
 	<div class="mainPhoneWrapper">
 		<div class="mainPhoneTop"></div>
 		<div class="mainScreen">
-			<div class="mainScrollArea scrollContainer">
+			<div id="scrollArea" class="mainScrollArea scrollContainer">
 		
 				<div>
 					<img src="assets/images/icons/Icon_tancar.png" class="closeArButton" id="closeArButton" onclick="hideAR()">
@@ -61,102 +61,49 @@
 						closeButton.style.visibility = "hidden";
 					}
 					
-					function hideSlider(s){
+					function hideSlider(s,b){
 						var bg = document.getElementById("blackBG");
 						var s = document.getElementById(s);
+						var scrollArea = document.getElementById("scrollArea");
+						var closeBttn = document.getElementById(b);
 
 						bg.style.visibility = "hidden";
 						s.style.visibility = "hidden";
+						scrollArea.style.overflowY = "inherit";
+						closeBttn.style.visibility = "hidden";
 					}
 
-					function showSlider(s){
+					function showSlider(s,b){
 						var bg = document.getElementById("blackBG");
 						var s = document.getElementById(s);
+						var scrollArea = document.getElementById("scrollArea");
+						var closeBttn = document.getElementById(b);
 
+						s.scrollIntoView();
 						bg.style.visibility = "visible";
 						s.style.visibility = "visible";
+						scrollArea.style.overflowY = "hidden";
+						closeBttn.style.visibility = "visible";
 					}
+
 					
 				</script>
 				<div class="Black-bg" id="blackBG">
-					<iframe src="./sliders/Slider1.html"></iframe>
+					<div class="iframeContainer">
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton1" onclick="hideSlider('sliderIframe1', 'closeButton1')">
+						<iframe style="width: 100%; height: 100%;" id="sliderIframe1" src="./sliders/Slider1.html"></iframe>
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton2" onclick="hideSlider('sliderIframe2', 'closeButton2')">
+						<iframe style="width: 100%; height: 100%;" id="sliderIframe2" src="./sliders/Slider2.html"></iframe>
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton3" onclick="hideSlider('sliderIframe3', 'closeButton3')">
+						<iframe style="width: 100%; height: 100%;" id="sliderIframe3" src="./sliders/Slider3.html"></iframe>
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton4" onclick="hideSlider('sliderIframe4', 'closeButton4')">
+						<iframe style="width: 100%; height: 100%;" id="sliderIframe4" src="./sliders/Slider4.html"></iframe>
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton5" onclick="hideSlider('sliderIframe5', 'closeButton5')">
+						<iframe style="width: 100%; height: 100%;" id="sliderIframe5" src="./sliders/Slider5.html"></iframe>
+					</div>
+					</iframe>
 				</div>
 
-				<!-- Slider 1 -->
-				<div class="SliderContainer" id="slider1">
-					<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider1')">
-					<!-- Swiper -->
-					<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="assets/images/thumbnails/P1_plus/PI1-plus-1.jpeg" width="100%" height="auto"></div>
-						<div class="swiper-slide"><img src="assets/images/thumbnails/P1_plus/PI1-plus-2.jpeg" width="100%" height="auto"></div>
-						<div class="swiper-slide"><img src="assets/images/thumbnails/P1_plus/PI1-plus-3.jpeg" width="100%" height="auto"></div>
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-					</div>
-				</div>
-
-			
-				<!-- Slider 2 -->
-				<div class="SliderContainer" id="slider2">
-					<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider2')">
-					<!-- Swiper -->
-					<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide imageSlider"><img src="assets/images/thumbnails/P2_plus/P2-plus-1.jpeg" width="100%" height="auto"></div>
-						<div class="swiper-slide imageSlider"><img src="assets/images/thumbnails/P2_plus/P2-plus-2.jpeg" width="100%" height="auto"></div>
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-					</div>
-				</div>
-
-			
-				<!-- Slider 3 -->
-				<div class="SliderContainer" id="slider3">
-					<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider3')">
-					<!-- Swiper -->
-					<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="assets/images/thumbnails/PI3_plus/P3-plus-1.jpeg" width="100%" height="auto"></div>
-						<div class="swiper-slide"><img src="assets/images/thumbnails/PI3_plus/P3-plus-2.jpeg" width="100%" height="auto"></div>
-						<div class="swiper-slide"><img src="assets/images/thumbnails/PI3_plus/P3-plus-3.jpeg" width="100%" height="auto"></div>
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-					</div>
-				</div>
-
-			
-				<!-- Slider 4 -->
-				<div class="SliderContainer" id="slider4">
-					<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider4')">
-					<!-- Swiper -->
-					<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="assets/images/thumbnails/PI4_plus/PI4-plus-1.jpeg" width="100%" height="auto"></div>
-						<div class="swiper-slide"><img src="assets/images/thumbnails/PI4_plus/PI4-plus-2.jpeg" width="100%" height="auto"></div>
-						<div class="swiper-slide"><img src="assets/images/thumbnails/PI4_plus/PI4-plus-3.jpeg" width="100%" height="auto"></div>
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-					</div>
-				</div>
-
-				
-				<!-- Slider 5 -->
-				<div class="SliderContainer" id="slider5">
-					<img src="assets/images/icons/Icon_tancar.png" class="closeSliderButton" onclick="hideSlider('slider5')">
-					<!-- Swiper -->
-					<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="assets/images/thumbnails/PI5_plus/PI5-plus-1.jpeg" width="100%" height="auto"></div>
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-					</div>
-				</div>
 
 				<nav class="navbar navbar-expand-lg navbar-light bg-transparent style11" style="height: 50px;">
 					<div class="container style12">
@@ -185,7 +132,7 @@
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
 									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
-									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider1')">
+									<a href="#sliderIframe2"><img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe1', 'closeButton1')"></a>
 									<img src="assets/images/thumbnails/PI1.png" class="img-fluid"></div>
 
 
@@ -194,7 +141,7 @@
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
 									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
-									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider2')">
+									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe2', 'closeButton2')">
 									<img src="assets/images/thumbnails/PI2.png" class="img-fluid"></div>
 
 
@@ -203,7 +150,7 @@
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
 									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
-									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider3')">
+									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe3', 'closeButton3')">
 									<img src="assets/images/thumbnails/PI3.png" class="img-fluid"></div>
 
 
@@ -212,7 +159,7 @@
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
 									<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
-									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider4')">
+									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe4', 'closeButton4')">
 									<img src="assets/images/thumbnails/PI4_new.png" class="img-fluid"></div>
 
 
@@ -221,7 +168,7 @@
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
 									<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
-									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('slider5')">
+									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe5', 'closeButton5')">
 									<img src="assets/images/thumbnails/PI5_new.png" class="img-fluid"></div>
 
 
@@ -231,7 +178,7 @@
 					</div>
 				</section>
 
-				<section class="style15" style="">
+				<section id="featuresBottom" class="style15">
 					<img src="assets/images/icons/Logo_Ajuntament_de_Roses.png" class="img-fluid style14" style="opacity: 60%;">
 				</section>
 			
@@ -240,26 +187,6 @@
 		</div>
 		<div class="mainPhoneBottom"></div>
 	</div>	
-
-
-	
-<!-- Optional JavaScript -->
-			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-			<!-- Swiper JS -->
-			<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-			<!-- Initialize Swiper -->
-			<script>
-			var swiper = new Swiper('.swiper-container', {
-				pagination: {
-				el: '.swiper-pagination',
-				dynamicBullets: true,
-				},
-			});
-			</script>
 
 </body>
 
