@@ -282,7 +282,8 @@ h3.section-title {
 	visibility: hidden;
 }
 
-#sliderIframe2, #sliderIframe3, #sliderIframe4, #sliderIframe5{
+
+.iframeStyle{
 	position: absolute;
 	left: 0px;
 	top: 0px;

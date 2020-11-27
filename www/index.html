@@ -90,16 +90,29 @@
 				</script>
 				<div class="Black-bg" id="blackBG">
 					<div class="iframeContainer">
+						<!-- Sliders -->
 						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton1" onclick="hideSlider('sliderIframe1', 'closeButton1')">
-						<iframe style="width: 100%; height: 100%;" id="sliderIframe1" src="./sliders/Slider1.html"></iframe>
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="sliderIframe1" src="./sliders/Slider1.html"></iframe>
 						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton2" onclick="hideSlider('sliderIframe2', 'closeButton2')">
-						<iframe style="width: 100%; height: 100%;" id="sliderIframe2" src="./sliders/Slider2.html"></iframe>
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="sliderIframe2" src="./sliders/Slider2.html"></iframe>
 						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton3" onclick="hideSlider('sliderIframe3', 'closeButton3')">
-						<iframe style="width: 100%; height: 100%;" id="sliderIframe3" src="./sliders/Slider3.html"></iframe>
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="sliderIframe3" src="./sliders/Slider3.html"></iframe>
 						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton4" onclick="hideSlider('sliderIframe4', 'closeButton4')">
-						<iframe style="width: 100%; height: 100%;" id="sliderIframe4" src="./sliders/Slider4.html"></iframe>
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="sliderIframe4" src="./sliders/Slider4.html"></iframe>
 						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButton5" onclick="hideSlider('sliderIframe5', 'closeButton5')">
-						<iframe style="width: 100%; height: 100%;" id="sliderIframe5" src="./sliders/Slider5.html"></iframe>
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="sliderIframe5" src="./sliders/Slider5.html"></iframe>
+						
+						<!--  3D Viewers   -->
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButtonRoma" onclick="hideSlider('Roma_3d', 'closeButtonRoma')">
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="Roma_3d" src="../ar/P1_Roma.html"></iframe>
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButtonGrec" onclick="hideSlider('Grec_3d', 'closeButtonGrec')">
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="Grec_3d" src="../ar/P2_Grec.html"></iframe>
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButtonEsglesia" onclick="hideSlider('Esglesia_3d', 'closeButtonEsglesia')">
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="Esglesia_3d" src="../ar/P3_Esglesia.html"></iframe>
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButtonMedieval" onclick="hideSlider('Medieval_3d', 'closeButtonMedieval')">
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="Medieval_3d" src="../ar/P4_Medieval.html"></iframe>
+						<img src="assets/images/icons/Icon_tancar.png" style="visibility: hidden;" class="closeSliderButton" id="closeButtonCaserna" onclick="hideSlider('Caserna_3d', 'closeButtonCaserna')">
+						<iframe style="width: 100%; height: 100%;" class="iframeStyle" id="Caserna_3d" src="../ar/P5_Caserna.html"></iframe>
 					</div>
 					</iframe>
 				</div>
@@ -122,7 +135,7 @@
 						<div class="row">
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
-									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
+									
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;">
 									<img src="assets/images/thumbnails/P0_Benvinguda.png" class="img-fluid"></div>
 
@@ -131,7 +144,7 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
-									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
+									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Roma_3d','closeButtonRoma')">
 									<a href="#sliderIframe2"><img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe1', 'closeButton1')"></a>
 									<img src="assets/images/thumbnails/PI1.png" class="img-fluid"></div>
 
@@ -140,7 +153,7 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
-									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
+									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Grec_3d','closeButtonGrec')">
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe2', 'closeButton2')">
 									<img src="assets/images/thumbnails/PI2.png" class="img-fluid"></div>
 
@@ -149,7 +162,7 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
-									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
+									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Esglesia_3d','closeButtonEsglesia')">
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe3', 'closeButton3')">
 									<img src="assets/images/thumbnails/PI3.png" class="img-fluid"></div>
 
@@ -158,7 +171,7 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
-									<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
+									<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Medieval_3d','closeButtonMedieval')">
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe4', 'closeButton4')">
 									<img src="assets/images/thumbnails/PI4_new.png" class="img-fluid"></div>
 
@@ -167,7 +180,7 @@
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
 								<div class="d-flex">
-									<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showAR()">
+									<!--<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Caserna_3d','closeButtonCaserna')">-->
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus.png" style="opacity: 60%;" onclick="showSlider('sliderIframe5', 'closeButton5')">
 									<img src="assets/images/thumbnails/PI5_new.png" class="img-fluid"></div>
 
