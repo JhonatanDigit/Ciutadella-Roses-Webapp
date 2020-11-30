@@ -80,7 +80,7 @@
 
 
                 camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 1000 );
-				camera.position.set( 400, 200, 0 );
+				camera.position.set( 170, 200, 0 );
 
 				// controls
 
@@ -225,6 +225,13 @@
 
 					scene.add( mesh );
 					mesh.scale.set( 0.25, 0.25, 0.25);
+
+					const box = new THREE.Box3().setFromObject( mesh );
+					const center = box.getCenter( new THREE.Vector3() );
+
+					mesh.position.x += ( mesh.position.x - center.x );
+					mesh.position.y += ( mesh.position.y - center.y );
+					mesh.position.z += ( mesh.position.z - center.z );
 
 				} );
 

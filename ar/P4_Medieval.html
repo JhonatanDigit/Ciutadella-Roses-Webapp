@@ -225,9 +225,16 @@
 
 					scene.add( mesh );
 					mesh.rotateZ(90);
-					mesh.translateX(200);
+					
 
 					mesh.scale.set( 0.1, 0.1, 0.1);
+
+					const box = new THREE.Box3().setFromObject( mesh );
+					const center = box.getCenter( new THREE.Vector3() );
+
+					mesh.position.x += ( mesh.position.x - center.x );
+					mesh.position.y += ( mesh.position.y - center.y );
+					mesh.position.z += ( mesh.position.z - center.z );
 
 				} );
 
