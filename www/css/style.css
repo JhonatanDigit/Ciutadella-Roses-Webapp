@@ -200,6 +200,17 @@ h3.section-title {
 	right: 5px;
 	max-width: 25px;
 }
+
+.style88{
+	display: block;
+	display: -ms-flexbox;
+	display: -webkit-box;	
+	position: absolute;
+	top: 5px;
+	right: 35px;
+	max-width: 25px;
+}
+
 .style9 {
 	max-width: 80px;
 	background-size: auto;
