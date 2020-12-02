@@ -75,6 +75,16 @@
 						closeBttn.style.visibility = "visible";
 					}
 
+					function TextInfoHolder(t){
+						var text = document.getElementById(t);
+
+						if(text.style.display == "none"){
+							text.style.display = 'inherit';
+						} else if(text.style.display == "inherit"){
+							text.style.display = 'none';
+						}
+					}
+
 					
 				</script>
 				<div class="Black-bg" id="blackBG">
@@ -123,64 +133,85 @@
 						</div>
 						<div class="row">
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
-								<div class="d-flex">
+								<div class="d-flex" style="align-items: flex-start;">
 									
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus-v2.png" style="opacity: 90%;">
-									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;">
-									<img src="assets/images/thumbnails/P0_Benvinguda.png" class="img-fluid"></div>
+									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="TextInfoHolder('text1')">
+									<img src="assets/images/thumbnails/P0_Benvinguda.png" class="img-fluid" style="height: auto !important;"></div>
 
 
 								<p class="text-light style4">Benvinguda</p>
+								<p id="text1" class="text-light style55" style="display: none;">
+									La situació estratègica de Roses, des d’un punt de vista marítim, ha estat determinant per tal que l‘ocupació humana hagi estat pràcticament ininterrompuda des de l’Antiguitat, amb la fundació de la colònia grega de Rhode, al segle V a. de C., la ciutat romana de Rodae, i la medieval i moderna de Roses. 
+								</p>
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
-								<div class="d-flex">
-									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Roma_3d','closeButtonRoma')">
+								<div class="d-flex" style="align-items: flex-start;">
+									
 									<a href="#sliderIframe2"><img class="style8 img-fluid" src="assets/images/icons/Icon-plus-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe1', 'closeButton1')"></a>
-									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe1', 'closeButton1')">
-									<img src="assets/images/thumbnails/PI1.png" class="img-fluid"></div>
+									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="TextInfoHolder('text2')">
+									<img src="assets/images/thumbnails/PI1.png" class="img-fluid" style="height: auto !important;" onclick="showSlider('Roma_3d','closeButtonRoma')" >
+									<!-- <img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 110px; transform: translate(-50%, -50%);" onclick="showSlider('Roma_3d','closeButtonRoma')"> -->
+									
+								</div>
 
 
 								<p class="text-light style4">Ciutat Romana: Rodae, Segle I d.J.C. - V d.J.C.</p>
+								<p id="text2" class="text-light style55" style="display: none;">
+									Aquest edifici de la ciutat romana fou construït al segle I d. de C. amb una funció termal. Al segle III d. de C. canvia la seva funció a fàbrica de salaons de peix, augmentant les seves dimensions, amb més estances dedicades a tallers i magatzems, tot al voltant d’un pati central obert pel costat de mar, per on arribaven el peix i la sal.
+								</p>
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
-								<div class="d-flex">
-									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Grec_3d','closeButtonGrec')">
+								<div class="d-flex" style="align-items: flex-start;">
+									<!-- <img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 110px; transform: translate(-50%, -50%);" onclick="showSlider('Grec_3d','closeButtonGrec')"> -->
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe2', 'closeButton2')">
-									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe2', 'closeButton2')">
-									<img src="assets/images/thumbnails/PI2.png" class="img-fluid"></div>
+									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="TextInfoHolder('text3')">
+									<img src="assets/images/thumbnails/PI2.png" class="img-fluid" style="height: auto !important;" onclick="showSlider('Grec_3d','closeButtonGrec')"></div>
 
 
 								<p class="text-light style4">Ciutat Grega: Rhode, segles V-II a.C.</p>
+								<p id="text3" class="text-light style55" style="display: none;">
+									El Barri Hel·lenístic es tracta de l’eixample de la ciutat construït al segle IV a. de C. i en ús durant pràcticament tot el segle III a. de C. La trama urbana és regular, amb un carrer principal que unia el nucli originari, dalt del Puig de Santa Maria, amb el port. Un barri de mercaders i artesans, entre els que destacà un centre terrisser de vaixella de taula que exportà les seves produccions a tota la Mediterrània Occident
+								</p>
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
-								<div class="d-flex">
-									<img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Esglesia_3d','closeButtonEsglesia')">
+								<div class="d-flex" style="align-items: flex-start;">
+									<!-- <img class="style9 ARButton" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 110px; transform: translate(-50%, -50%);" onclick="showSlider('Esglesia_3d','closeButtonEsglesia')"> -->
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe3', 'closeButton3')">
-									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe3', 'closeButton3')">
-									<img src="assets/images/thumbnails/PI3.png" class="img-fluid"></div>
+									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="TextInfoHolder('text4')">
+									<img src="assets/images/thumbnails/PI3.png" class="img-fluid" style="height: auto !important;" onclick="showSlider('Esglesia_3d','closeButtonEsglesia')"></div>
 
 
 								<p class="text-light style4">Monestir de Santa Maria de Roses, segles X-XV.</p>
+								<p id="text4" class="text-light style55" style="display: none;">
+									El monestir de Santa Maria de Roses es va fundar al segle X. El terme jurisdiccional de l’abadia era gairebé el mateix terme municipal actual de Roses, a banda de propietats en moltes altres poblacions del comtat. L’església romànica va ser construïda a la primera meitat del segle XI, amb claustre i dependències monacals protegides per una muralla.
+								</p>
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
-								<div class="d-flex">
-									<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Medieval_3d','closeButtonMedieval')">
+								<div class="d-flex" style="align-items: flex-start;">
+									<!-- <img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 110px; transform: translate(-50%, -50%);" onclick="showSlider('Medieval_3d','closeButtonMedieval')"> -->
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe4', 'closeButton4')">
-									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe4', 'closeButton4')">
-									<img src="assets/images/thumbnails/PI4_new.png" class="img-fluid"></div>
+									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="TextInfoHolder('text5')">
+									<img src="assets/images/thumbnails/PI4_new.png" class="img-fluid" style="height: auto !important;" onclick="showSlider('Medieval_3d','closeButtonMedieval')"></div>
 
 
 								<p class="text-light style4">Vila medieval i moderna: Roses, segles XV-XVII.</p>
+								<p id="text5" class="text-light style55" style="display: none;">
+									Al segle XI es crea un nucli de població al costa del monestir que vivia de l’agricultura i de la pesca. Roses es convertí en el port comtal, adquirint cada cop més pes l’artesania i el comerç marítim. La vila va créixer en direcció al mar, on tenia el port, magatzems, moll de pedra i la drassana comtal.
+								</p>
 							</div>
 							<div class="col-12 col-md-6 col-lg-4 text-center py-4 style5" style="padding-left: 0px !important; padding-right: 0px !important; padding: 0px !important;">
-								<div class="d-flex">
-									<img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 44%; transform: translate(-50%, -50%);" onclick="showSlider('Caserna_3d','closeButtonCaserna')">
+								<div class="d-flex" style="align-items: flex-start;">
+									<!-- <img class="style9" src="assets/images/icons/Play_icon_AR-white.png" style="left: 50%; top: 110px; transform: translate(-50%, -50%);" onclick="showSlider('Caserna_3d','closeButtonCaserna')"> -->
 									<img class="style8 img-fluid" src="assets/images/icons/Icon-plus-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe5', 'closeButton5')">
-									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="showSlider('sliderIframe5', 'closeButton5')">
-									<img src="assets/images/thumbnails/PI5_new.png" class="img-fluid"></div>
+									<img class="style88 img-fluid" src="assets/images/icons/Icon-text-v2.png" style="opacity: 90%;" onclick="TextInfoHolder('text6')">
+									<img src="assets/images/thumbnails/PI5_new.png" class="img-fluid" style="height: auto !important;" onclick="showSlider('Caserna_3d','closeButtonCaserna')"></div>
 
 
 								<p class="text-light style4">Fortificació Reinaxentista, segles XVI-XIX.</p>
+								<p id="text6" class="text-light style55" style="display: none;">
+									L’ús de l’artilleria de foc va imposar la construcció de noves estructures defensives, construint-se a Roses una fortificació de planta pentagonal a mitjans del segle XVI. A l’interior es van construir magatzems de pólvora i munició, un hospital militar, quadres per a la cavalleria i dues casernes amb capacitat per a 500 homes, entre tropa i oficials.
+								</p>
 							</div>
 						</div>
 					</div>

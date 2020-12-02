@@ -168,16 +168,24 @@ h3.section-title {
 .style2 {
 	max-width: 50%;
 	float: left;
+	height: auto !important;
 }
 .style3 {
 	padding-top: 5px;
 	padding-bottom: 5px;}
 .style4 {
-	font-size: .75rem;
+	font-size: .85rem;
 	margin-top: 9px;
 	margin-bottom: 9px;
+	font-weight: bold;
 }
-.style5 {}
+.style55 {
+	font-size: .75rem;
+	margin-top: 9px;
+	margin-bottom: 15px;
+	padding: 0px 15px;
+	text-align: justify;
+}
 .style6 {
 	margin-top: 10px;
 	margin-bottom: 10px;
