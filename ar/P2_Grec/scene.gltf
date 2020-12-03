@@ -6923,40 +6923,40 @@
   ],
   "images": [
     {
-      "uri": "textures/PEDRA_SECA_baseColor.jpeg"
+      "uri": "textures/PEDRA_SECA_baseColor.jpg"
     },
     {
-      "uri": "textures/ceramica_trencada_baseColor.jpeg"
+      "uri": "textures/ceramica_trencada_baseColor.jpg"
     },
     {
-      "uri": "textures/aigua_cer_baseColor.jpeg"
+      "uri": "textures/aigua_cer_baseColor.jpg"
     },
     {
-      "uri": "textures/aigua_baseColor.jpeg"
+      "uri": "textures/aigua_baseColor.jpg"
     },
     {
-      "uri": "textures/PARED_GRECIA_baseColor.jpeg"
+      "uri": "textures/PARED_GRECIA_baseColor.jpg"
     },
     {
-      "uri": "textures/TERRA_PEUS_baseColor.jpeg"
+      "uri": "textures/TERRA_PEUS_baseColor.jpg"
     },
     {
-      "uri": "textures/fusta_baseColor.jpeg"
+      "uri": "textures/fusta_baseColor.jpg"
     },
     {
-      "uri": "textures/fang_baseColor.jpeg"
+      "uri": "textures/fang_baseColor.jpg"
     },
     {
-      "uri": "textures/terra_grecia_baseColor.jpeg"
+      "uri": "textures/terra_grecia_baseColor.jpg"
     },
     {
-      "uri": "textures/paja_baseColor.jpeg"
+      "uri": "textures/paja_baseColor.jpg"
     },
     {
-      "uri": "textures/mares_baseColor.jpeg"
+      "uri": "textures/mares_baseColor.jpg"
     },
     {
-      "uri": "textures/TOBOT_baseColor.jpeg"
+      "uri": "textures/TOBOT_baseColor.jpg"
     },
     {
       "uri": "textures/pedra_baseColor.jpeg"
@@ -6974,10 +6974,10 @@
       "uri": "textures/Material.158_baseColor.jpeg"
     },
     {
-      "uri": "textures/sostre_grecia_baseColor.jpeg"
+      "uri": "textures/sostre_grecia_baseColor.jpg"
     },
     {
-      "uri": "textures/rebosat_baseColor.jpeg"
+      "uri": "textures/rebosat_baseColor.jpg"
     }
   ],
   "materials": [

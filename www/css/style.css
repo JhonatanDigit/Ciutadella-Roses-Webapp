@@ -206,7 +206,7 @@ h3.section-title {
 	position: absolute;
 	top: 5px;
 	right: 5px;
-	max-width: 25px;
+	max-width: 50px;
 }
 
 .style88{
@@ -214,9 +214,9 @@ h3.section-title {
 	display: -ms-flexbox;
 	display: -webkit-box;	
 	position: absolute;
-	top: 5px;
-	right: 35px;
-	max-width: 25px;
+	top: 60px;
+	right: 5px;
+	max-width: 50px;
 }
 
 .style9 {
@@ -226,10 +226,6 @@ h3.section-title {
 }
 .style10 {
 	max-width: 25px;
-}
-.style11 {
-}
-.style12 {
 }
 .style13 {
 	max-width: 25px;
@@ -269,8 +265,8 @@ h3.section-title {
 	z-index: 5;
 	width: 30px;
 	height: 30px;
-	right: 20px;
-	top: 20px;
+	right: 15px;
+	top: 30px;
 }
 
 .Black-bg{
