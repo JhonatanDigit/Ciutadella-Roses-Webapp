@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ENGINYERIA">
 
 <head>
 	<!-- Required meta tags -->
@@ -15,6 +15,7 @@
 
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet/scss" href="css/language.scss">
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -122,8 +123,22 @@
 
 
 				<nav class="navbar navbar-expand-lg navbar-light bg-transparent style11" style="height: 50px;">
+					
+
 					<div class="container style12">
 						<img src="assets/images/icons/I-Informacio.png" class="img-fluid style13" style="position: absolute; left: 50%; transform: translate(-50%);" onclick="TextInfoHolder('infoPanel')">
+											<!--LANGUAGE SELECTOR-->
+						<div class="language-picker js-language-picker img-fluid" data-trigger-class="btn btn--subtle js-tab-focus">
+							<form action="" class="language-picker__form">					  
+								
+							<select name="language-picker-select" id="language-picker-select">
+								<option lang="ca" value="catalan" selected>Catalan</option>
+								<option lang="es" value="spanish">Castellano</option>
+								<option lang="en" value="english">English</option>
+								<option lang="it" value="francais">Français</option>
+							</select>
+							</form>
+						</div> 
 						<!-- <img src="assets/images/icons/instagram.png" class="img-fluid style13" style="position: absolute; right: 50px;">
 						<img src="assets/images/icons/facebook.png" class="img-fluid style10" style="position: absolute; right: 20px;"> -->
 					</div>

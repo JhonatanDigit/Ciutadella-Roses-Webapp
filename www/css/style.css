@@ -1,5 +1,5 @@
 /* CSS Document */
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,300&display=swap');
 body{
 	padding-top: 0px !important;
 }
@@ -310,9 +310,30 @@ h3.section-title {
 	visibility: hidden;
 }
 
-
 .iframeStyle{
 	position: absolute;
 	left: 0px;
 	top: 0px;
 }
+
+#language-picker-select{
+	padding: 2px 2px;
+	background-color: #35b8b0;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid white;
+	cursor: pointer;
+
+}
+
+#language-picker-select:focus,
+#language-picker-select:hover{
+	outline: none;
+	border: 1px solid rgb(223, 223, 223);
+}
+
+#language-picker-select option{
+	border-radius: 4px;
+}
+
+
