@@ -179,6 +179,19 @@ h3.section-title {
 	margin-bottom: 9px;
 	font-weight: bold;
 }
+.style44{
+	font-size: .65rem;
+	margin-top: 9px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	text-align: justify;
+	padding: 20px 20px;
+}
+.logosInfo{
+	width: 75%;
+	margin: 15px;
+	background: white;
+}
 .style55 {
 	font-size: .75rem;
 	margin-top: 9px;
